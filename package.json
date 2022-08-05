@@ -1,0 +1,34 @@
+{
+  "name": "save-img-with-imgbb-example",
+  "version": "1.0.0",
+  "description": "use ImgBB api to save photo in cloud",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js -e *",
+    "typescript:dev": "tsc --watch",
+    "scss:dev": "sass --no-source-map --watch src/scss/main.scss public/css/main.css",
+    "build": "tsc",
+    "dev": "npm-run-all --parallel start:dev typescript:dev scss:dev"
+  },
+  "keywords": [
+    "API",
+    "Cloud",
+    "Save-File"
+  ],
+  "author": "Thamer Ayachi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.6.4",
+    "nodemon": "^2.0.19",
+    "sass": "^1.54.3",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.1"
+  }
+}
