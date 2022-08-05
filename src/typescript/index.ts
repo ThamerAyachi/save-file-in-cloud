@@ -21,7 +21,8 @@ const showImg = async (url: string) => {
     );
 
     showImg(res.data.data.display_url);
+    console.log(res);
   } catch (err) {
-    console.log(err);
+    console.log((err as any).response.data.error.code);
   }
 });
